@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS store;
+USE store;
+
+CREATE TABLE IF NOT EXISTS Product (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100) NOT NULL,
+    Price DECIMAL(10,2) NOT NULL,
+    Quantity INT NOT NULL
+);
